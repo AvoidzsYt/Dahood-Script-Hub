@@ -1,0 +1,31 @@
+local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/cypherdh/VanisUILIB/main/.gitignore'))()
+
+local Window = library:CreateWindow("Dahood Scripts", V1)
+
+local Tab = Window:CreateTab("Scripts")
+
+local Page = Tab:CreateFrame("Aim")
+
+Button = Page:CreateButton("Aimlock", "Q to toggle", function()
+CreateNotification("Enabling", "Aimlock Enabled", function(value)
+if value == true then
+loadstring(game:HttpGet("https://pastebin.com/raw/iNd3xTPv"))()(true)
+end
+end)
+end)
+
+Button = Page:CreateButton("Auto Reload", "Click Tick And It Will Enable But Wont Say Work On that soon", function()
+CreateNotification("Auto Reload", "Reloads rev and double barrel", function(value)
+if value == true then
+loadstring(game:HttpGet('https://pastebin.com/raw/yuBgqJcW'))()(true)
+end
+end)
+end)
+
+Button = Page:CreateButton("Anti lock", "Stop people locking onto you", function()
+CreateNotification("catch people out", "Press T to toggle", function(value)
+if value == true then
+loadstring(game:HttpGet('https://pastebin.com/raw/0YxMeN8B'))()()(true)
+end
+end)
+end)
